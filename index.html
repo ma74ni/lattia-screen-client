@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBdT1ZR-WvuXMRYEcTIKcDitmUedNxhP2I",
+        authDomain: "lattia-cf500.firebaseapp.com",
+        databaseURL: "https://lattia-cf500.firebaseio.com",
+        projectId: "lattia-cf500",
+        storageBucket: "lattia-cf500.appspot.com",
+        messagingSenderId: "495844794407",
+        appId: "1:495844794407:web:18524d72faade075c12e02",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>Pantalla</title>
+  </head>
+  <body>
+    <div id="fullpage">
+      <div id="app">
+        <div class="section">
+          <div :class="{ block: openTab == 1, hidden: openTab != 1 }">
+            <video loop muted data-autoplay>
+              <source src="static/videos/intro_logo_2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div :class="{ block: openTab == 2, hidden: openTab != 2 }">
+            <div class="container mx-auto">
+              <div>
+                <img
+                  class="animate__animated animate__wobble w-56 mx-auto"
+                  src="static/images/logo.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 class="text-center text-hlpurple-100 text-5xl">Sabores</h1>
+              </div>
+              <div class="grid grid-cols-4 gap-4 py-12">
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+                <div class="text-center">Sabor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"></script>
+    <script type="module" src="static/js/app.js"></script>
+  </body>
+</html>

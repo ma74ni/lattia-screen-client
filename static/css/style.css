@@ -1,0 +1,17 @@
+:root {
+  --purple-100: #8c4799;
+  --purple-200: #772583;
+  --green-100: #78be21;
+  --blue-100: #426da9;
+  --orange-100: #de7c00;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+.bg-borde {
+  background: url("images/borde.png") no-repeat center center;
+  background-size: cover;
+}
+.text-hlpurple-100 {
+  color: var(--purple-200);
+}
